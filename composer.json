@@ -29,6 +29,14 @@
         "twig/markdown-extra": "^2.12|^3.0",
         "twig/string-extra": "^2.12|^3.0"
     },
+    "suggest": {
+        "twig/cssinliner-extra": "Adds the 'inline_css' Twig filter.",
+        "twig/html-extra": "Adds the 'data_uri' filter and 'html_classes' function to Twig.",
+        "twig/inky-extra": "Adds the 'inky_to_html' Twig filter.",
+        "twig/intl-extra": "Adds country, currency, locale and formatting filters and functions to Twig.",
+        "twig/markdown-extra": "Adds 'html_to_markdown' and 'markdown_to_html' Twig filters.",
+        "twig/string-extra": "Adds the 'u' Twig filter."
+    },
     "autoload": {
         "psr-4" : { "Twig\\Extra\\TwigExtraBundle\\" : "" },
         "exclude-from-classmap": [
