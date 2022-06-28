@@ -13,6 +13,7 @@ namespace Twig\Extra\TwigExtraBundle;
 
 use Twig\Extra\Cache\CacheExtension;
 use Twig\Extra\CssInliner\CssInlinerExtension;
+use Twig\Extra\Date\DateExtension;
 use Twig\Extra\Html\HtmlExtension;
 use Twig\Extra\Inky\InkyExtension;
 use Twig\Extra\Intl\IntlExtension;
@@ -86,6 +87,15 @@ final class Extensions
             'class_name' => 'StringExtension',
             'package' => 'twig/string-extra',
             'filters' => ['u'],
+            'functions' => [],
+            'tags' => [],
+        ],
+        'date' => [
+            'name' => 'date',
+            'class' => DateExtension::class,
+            'class_name' => 'DateExtension',
+            'package' => 'siniliote-twig/date-extra',
+            'filters' => ['time_diff'],
             'functions' => [],
             'tags' => [],
         ],
