@@ -17,7 +17,7 @@ use Twig\Extra\TwigExtraBundle\DependencyInjection\Compiler\MissingExtensionSugg
 
 class TwigExtraBundle extends Bundle
 {
-    public function build(ContainerBuilder $container)
+    public function build(ContainerBuilder $container): void
     {
         parent::build($container);
 
