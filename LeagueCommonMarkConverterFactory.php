@@ -20,18 +20,20 @@ use League\CommonMark\Extension\ExtensionInterface;
 final class LeagueCommonMarkConverterFactory
 {
     private $extensions;
+    private $converterConfig;
 
     /**
      * @param ExtensionInterface[] $extensions
      */
-    public function __construct(iterable $extensions)
+    public function __construct(iterable $extensions, array $converterConfig = [])
     {
         $this->extensions = $extensions;
+        $this->converterConfig = $converterConfig;
     }
 
     public function __invoke(): CommonMarkConverter
     {
-        $converter = new CommonMarkConverter();
+        $converter = new CommonMarkConverter($this->converterConfig);
 
         foreach ($this->extensions as $extension) {
             $converter->getEnvironment()->addExtension($extension);
