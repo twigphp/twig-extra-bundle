@@ -16,13 +16,13 @@
     ],
     "require": {
         "php": ">=8.1.0",
-        "symfony/framework-bundle": "^5.4|^6.4|^7.0",
-        "symfony/twig-bundle": "^5.4|^6.4|^7.0",
+        "symfony/framework-bundle": "^5.4|^6.4|^7.0|^8.0",
+        "symfony/twig-bundle": "^5.4|^6.4|^7.0|^8.0",
         "twig/twig": "^3.2|^4.0"
     },
     "require-dev": {
         "league/commonmark": "^2.7",
-        "symfony/phpunit-bridge": "^6.4|^7.0",
+        "symfony/phpunit-bridge": "^6.4|^7.0|^8.0",
         "twig/cache-extra": "^3.0",
         "twig/cssinliner-extra": "^3.0",
         "twig/html-extra": "^3.0",
