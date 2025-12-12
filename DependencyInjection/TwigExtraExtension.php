@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Twig\Extra\TwigExtraBundle\Extensions;
 
-if (!method_exists(ContainerBuilder::class, 'getAutoconfiguredAttributes')) {
+if (Kernel::MAJOR_VERSION >= 8) {
     /** @internal */
     trait TwigExtraExtensionTrait
     {
