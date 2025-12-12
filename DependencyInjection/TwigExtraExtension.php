@@ -17,6 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Twig\Extra\TwigExtraBundle\Extensions;
+use Symfony\Component\HttpKernel\Kernel;
 
 if (Kernel::MAJOR_VERSION >= 8) {
     /** @internal */
